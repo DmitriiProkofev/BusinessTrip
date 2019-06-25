@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC488987-9506-4C8A-8425-E208CFB10684}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core.BusinessTrip</RootNamespace>
+    <AssemblyName>Core.BusinessTrip</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DP.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\BusinessTripContext.cs" />
+    <Compile Include="DataInterfaces\IExtendedRepositoryBusinessTrip.cs" />
+    <Compile Include="DataInterfaces\IExtendedRepositoryParty.cs" />
+    <Compile Include="DataInterfaces\IRepository.cs" />
+    <Compile Include="Domain\BusinessTrip.cs" />
+    <Compile Include="Domain\Command.cs" />
+    <Compile Include="Domain\ContractPIR.cs" />
+    <Compile Include="Domain\Department.cs" />
+    <Compile Include="Domain\Direction.cs" />
+    <Compile Include="Domain\Location.cs" />
+    <Compile Include="Domain\Organization.cs" />
+    <Compile Include="Domain\Party.cs" />
+    <Compile Include="Domain\PartyPerson.cs" />
+    <Compile Include="Domain\Person.cs" />
+    <Compile Include="Domain\Position.cs" />
+    <Compile Include="Domain\RequestTransport.cs" />
+    <Compile Include="Domain\Transport.cs" />
+    <Compile Include="Domain\TypeWork.cs" />
+    <Compile Include="Helpers\DomainHelpers\BoolComparer.cs" />
+    <Compile Include="Helpers\DomainHelpers\DateTimeComparer.cs" />
+    <Compile Include="Helpers\DomainHelpers\DirectionComparer.cs" />
+    <Compile Include="Helpers\DomainHelpers\PartyPersonComparer.cs" />
+    <Compile Include="Migrations\201808281140463_Initial.cs" />
+    <Compile Include="Migrations\201808281140463_Initial.Designer.cs">
+      <DependentUpon>201808281140463_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808300747468_PhoneNumberToPerson.cs" />
+    <Compile Include="Migrations\201808300747468_PhoneNumberToPerson.Designer.cs">
+      <DependentUpon>201808300747468_PhoneNumberToPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808300928121_NewLineToPerson.cs" />
+    <Compile Include="Migrations\201808300928121_NewLineToPerson.Designer.cs">
+      <DependentUpon>201808300928121_NewLineToPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808310430229_AddProxyPropertyAndChangeMaxLength.cs" />
+    <Compile Include="Migrations\201808310430229_AddProxyPropertyAndChangeMaxLength.Designer.cs">
+      <DependentUpon>201808310430229_AddProxyPropertyAndChangeMaxLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809070412185_EditNameDepartments.cs" />
+    <Compile Include="Migrations\201809070412185_EditNameDepartments.Designer.cs">
+      <DependentUpon>201809070412185_EditNameDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809071045235_EditNumberDepartments.cs" />
+    <Compile Include="Migrations\201809071045235_EditNumberDepartments.Designer.cs">
+      <DependentUpon>201809071045235_EditNumberDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809100715509_MoveCategoryToDepartment.cs" />
+    <Compile Include="Migrations\201809100715509_MoveCategoryToDepartment.Designer.cs">
+      <DependentUpon>201809100715509_MoveCategoryToDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809120851059_ShortAddressRequiredLength250.cs" />
+    <Compile Include="Migrations\201809120851059_ShortAddressRequiredLength250.Designer.cs">
+      <DependentUpon>201809120851059_ShortAddressRequiredLength250.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809191141137_EditRequestTransport.cs" />
+    <Compile Include="Migrations\201809191141137_EditRequestTransport.Designer.cs">
+      <DependentUpon>201809191141137_EditRequestTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ProjectBase\Utils\AsyncWorking\AsyncLoader.cs" />
+    <Compile Include="ProjectBase\Utils\AsyncWorking\AsyncLoaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectBase\Utils\AsyncWorking\AsyncLoaderForm.Designer.cs">
+      <DependentUpon>AsyncLoaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="DP.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808281140463_Initial.resx">
+      <DependentUpon>201808281140463_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808300747468_PhoneNumberToPerson.resx">
+      <DependentUpon>201808300747468_PhoneNumberToPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808300928121_NewLineToPerson.resx">
+      <DependentUpon>201808300928121_NewLineToPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808310430229_AddProxyPropertyAndChangeMaxLength.resx">
+      <DependentUpon>201808310430229_AddProxyPropertyAndChangeMaxLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809070412185_EditNameDepartments.resx">
+      <DependentUpon>201809070412185_EditNameDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809071045235_EditNumberDepartments.resx">
+      <DependentUpon>201809071045235_EditNumberDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809100715509_MoveCategoryToDepartment.resx">
+      <DependentUpon>201809100715509_MoveCategoryToDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809120851059_ShortAddressRequiredLength250.resx">
+      <DependentUpon>201809120851059_ShortAddressRequiredLength250.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809191141137_EditRequestTransport.resx">
+      <DependentUpon>201809191141137_EditRequestTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectBase\Utils\AsyncWorking\AsyncLoaderForm.resx">
+      <DependentUpon>AsyncLoaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

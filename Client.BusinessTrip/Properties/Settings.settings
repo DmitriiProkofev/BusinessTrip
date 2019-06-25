@@ -1,0 +1,153 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Client.BusinessTrip.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SelectedUser" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SortIndexPersons" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderPersons" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SortIndexBusinessTrips" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderBusinessTrips" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SortIndexDepartments" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderDepartments" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SortIndexLocations" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderLocations" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SortIndexOrganizations" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderOrganizations" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SortIndexPartys" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderPartys" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SortIndexPositions" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderPositions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SortIndexTransports" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderTransports" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SortIndexTypeWorks" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SortOrderTypeWorks" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewPersons" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">645</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewPersons" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">405</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewPersons" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewTypeWorks" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">645</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewTransports" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">645</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewPositions" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">645</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewPartys" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">645</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewOrganizations" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">645</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewLocations" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">645</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewDirections" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewDepartments" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">645</Value>
+    </Setting>
+    <Setting Name="WindowWidthViewBusinessTrips" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">860</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewTypeWorks" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">310</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewTransports" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">310</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewPositions" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">275</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewPartys" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">385</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewOrganizations" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">310</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewLocations" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">335</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewDirections" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">239</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewDepartments" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">310</Value>
+    </Setting>
+    <Setting Name="WindowHeightViewBusinessTrips" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">944</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewTypeWorks" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewTransports" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewPositions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewPartys" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewOrganizations" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewLocations" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewDirections" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewDepartments" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowStateMaximizedViewBusinessTrips" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

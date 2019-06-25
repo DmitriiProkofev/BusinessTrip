@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFF7F582-0B1A-4A36-A714-81538F506857}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Client.BusinessTrip</RootNamespace>
+    <AssemblyName>BusinessTrip</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\fs21402\Templates\WindowsPrograms\IT-Distr\028_BusinessTrip\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Командировки</ProductName>
+    <PublisherName>СамараНИПИнефть</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.2.3</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DF4906CF4663F9FA6A6988581216BF6EAC2A2F0D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Client.BusinessTrip_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>rosneft.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cyriller, Version=0.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Cyriller.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.4\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\ExtensionMethods.cs" />
+    <Compile Include="Helpers\HelperReports\HelperReports.cs" />
+    <Compile Include="Helpers\HelperReports\LoadExcelPersons.cs" />
+    <Compile Include="Helpers\Sortable\PropertyComparer.cs" />
+    <Compile Include="Helpers\Sortable\SortableBindingList.cs" />
+    <Compile Include="IModels\IBaseModel.cs" />
+    <Compile Include="IModels\IBusinessTripModel.cs" />
+    <Compile Include="IModels\IPartysModel.cs" />
+    <Compile Include="IoC\CompositionRoot.cs" />
+    <Compile Include="IoC\Ninject\NinjectBindings.cs" />
+    <Compile Include="IPresenters\IBusinessTripPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryDepartmentsPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryDirectionsPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryLocationsPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryOrganizationsPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryPartysPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryPersonsPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryPositionsPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryTransportsPresenter.cs" />
+    <Compile Include="IPresenters\IDirectoryTypeWorksPresenter.cs" />
+    <Compile Include="IViews\IBaseView.cs" />
+    <Compile Include="IViews\IBusinessTripView.cs" />
+    <Compile Include="IViews\IDirectoryDepartmentsView.cs" />
+    <Compile Include="IViews\IDirectoryDirectionsView.cs" />
+    <Compile Include="IViews\IDirectoryLocationsView.cs" />
+    <Compile Include="IViews\IDirectoryOrganizationsView.cs" />
+    <Compile Include="IViews\IDirectoryPartysView.cs" />
+    <Compile Include="IViews\IDirectoryPersonsView.cs" />
+    <Compile Include="IViews\IDirectoryPositionsView.cs" />
+    <Compile Include="IViews\IDirectoryTransportsView.cs" />
+    <Compile Include="IViews\IDirectoryTypeWorksView.cs" />
+    <Compile Include="Models\BusinessTripModel.cs" />
+    <Compile Include="Models\DirectoryDepartmentsModel.cs" />
+    <Compile Include="Models\DirectoryDirectionsModel.cs" />
+    <Compile Include="Models\DirectoryLocationsModel.cs" />
+    <Compile Include="Models\DirectoryOrganizationsModel.cs" />
+    <Compile Include="Models\DirectoryPartysModel.cs" />
+    <Compile Include="Models\DirectoryPersonsModel.cs" />
+    <Compile Include="Models\DirectoryPositionsModel.cs" />
+    <Compile Include="Models\DirectoryTransportsModel.cs" />
+    <Compile Include="Models\DirectoryTypeWorksModel.cs" />
+    <Compile Include="Presenters\BusinessTripPresenter.cs" />
+    <Compile Include="Presenters\DirectoryDirectionsPresenter.cs" />
+    <Compile Include="Presenters\DirectoryLocationsPresenter.cs" />
+    <Compile Include="Presenters\DirectoryOrganizationsPresenter.cs" />
+    <Compile Include="Presenters\DirectoryPartysPresenter.cs" />
+    <Compile Include="Presenters\DirectoryPersonsPresenter.cs" />
+    <Compile Include="Presenters\DirectoryPositionsPresenter.cs" />
+    <Compile Include="Presenters\DirectoryTransportsPresenter.cs" />
+    <Compile Include="Presenters\DirectoryTypeWorksPresenter.cs" />
+    <Compile Include="Presenters\DirectoryDepartmentsPresenter.cs" />
+    <Compile Include="Reports\BusinessTrips.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Excels\RequestTransportToExcel.cs" />
+    <Compile Include="Reports\Excels\TaskToExcel.cs" />
+    <Compile Include="Reports\Words\DecreeToWord.cs" />
+    <Compile Include="Views\BusinessTripView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BusinessTripView.Designer.cs">
+      <DependentUpon>BusinessTripView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryDepartmentsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryDepartmentsView.Designer.cs">
+      <DependentUpon>DirectoryDepartmentsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryDirectionsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryDirectionsView.Designer.cs">
+      <DependentUpon>DirectoryDirectionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryLocationsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryLocationsView.Designer.cs">
+      <DependentUpon>DirectoryLocationsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryOrganizationsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryOrganizationsView.Designer.cs">
+      <DependentUpon>DirectoryOrganizationsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryPartysView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryPartysView.Designer.cs">
+      <DependentUpon>DirectoryPartysView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryPersonsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryPersonsView.Designer.cs">
+      <DependentUpon>DirectoryPersonsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryPositionsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryPositionsView.Designer.cs">
+      <DependentUpon>DirectoryPositionsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryTransportsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryTransportsView.Designer.cs">
+      <DependentUpon>DirectoryTransportsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DirectoryTypeWorksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DirectoryTypeWorksView.Designer.cs">
+      <DependentUpon>DirectoryTypeWorksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AboutTheProgramView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AboutTheProgramView.Designer.cs">
+      <DependentUpon>AboutTheProgramView.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\rosneftLogo.png" />
+    <None Include="Resources\ssssave.png" />
+    <Content Include="rosneft.ico" />
+    <EmbeddedResource Include="Views\AboutTheProgramView.resx">
+      <DependentUpon>AboutTheProgramView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Client.BusinessTrip_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\ImageRefresh.png" />
+    <None Include="Resources\ImageClear.png" />
+    <None Include="Resources\clearButtonIconDark.png" />
+    <EmbeddedResource Include="Views\DirectoryDepartmentsView.resx">
+      <DependentUpon>DirectoryDepartmentsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DirectoryPartysView.resx">
+      <DependentUpon>DirectoryPartysView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DirectoryPositionsView.resx">
+      <DependentUpon>DirectoryPositionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DirectoryTransportsView.resx">
+      <DependentUpon>DirectoryTransportsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DirectoryTypeWorksView.resx">
+      <DependentUpon>DirectoryTypeWorksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\book.ico" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BusinessTripView.resx">
+      <DependentUpon>BusinessTripView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DirectoryDirectionsView.resx">
+      <DependentUpon>DirectoryDirectionsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DirectoryLocationsView.resx">
+      <DependentUpon>DirectoryLocationsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DirectoryOrganizationsView.resx">
+      <DependentUpon>DirectoryOrganizationsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DirectoryPersonsView.resx">
+      <DependentUpon>DirectoryPersonsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.BusinessTrip\Core.BusinessTrip.csproj">
+      <Project>{dc488987-9506-4c8a-8425-e208cfb10684}</Project>
+      <Name>Core.BusinessTrip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.BusinessTrip\Data.BusinessTrip.csproj">
+      <Project>{90017B5D-C0F6-41BA-A008-C8CDABC09236}</Project>
+      <Name>Data.BusinessTrip</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageAddCopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageCancal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageOk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagePrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageSaveUpdate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageSerch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosneft.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
